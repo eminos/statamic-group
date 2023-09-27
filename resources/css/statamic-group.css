@@ -7,7 +7,8 @@
     border-bottom-width: 1px;
 }
 
-.group-fieldtype > .field-inner {
+.group-fieldtype > .field-inner,
+.group-fieldtype > label {
     display: none;
 }
 
