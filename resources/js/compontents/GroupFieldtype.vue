@@ -38,14 +38,6 @@ export default {
         }
     },
 
-    computed: {
-        // 
-    },
-
-    methods: {
-        // 
-    },
-
     mounted() {
         if (this.config.save_toggle_state) {
             this.toggle = this.value
@@ -64,7 +56,7 @@ export default {
             element = element.nextElementSibling;
         }
 
-        /** Append the sibling fields to the correct tab content container */
+        /** Append the sibling fields to the correct group content container */
         this.$nextTick(() => {
             nextSiblings.forEach((nextSibling) => {
                 this.$el.querySelector('.publish-fields').appendChild(nextSibling)

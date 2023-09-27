@@ -9,7 +9,7 @@
 
 .group-fieldtype > .field-inner,
 .group-fieldtype > label {
-    display: none;
+    display: none !important;
 }
 
 .group-fieldtype .section-fieldtype.form-group:first-child {
