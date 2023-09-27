@@ -1,0 +1,12 @@
+{
+  "resources/css/statamic-group.css": {
+    "file": "assets/statamic-group-773ccde9.css",
+    "isEntry": true,
+    "src": "resources/css/statamic-group.css"
+  },
+  "resources/js/statamic-group.js": {
+    "file": "assets/statamic-group-f9543805.js",
+    "isEntry": true,
+    "src": "resources/js/statamic-group.js"
+  }
+}
