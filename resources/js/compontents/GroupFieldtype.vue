@@ -7,7 +7,7 @@
                         <span v-text="config.display" v-tooltip="{content: config.handle, delay: 300, autoHide: false}"></span>
                     </label>
                     <div class="help-block -mt-2" v-if="config.instructions">
-                        <p v-text="config.instructions"></p>
+                        <p v-html="$options.filters.markdown(config.instructions)"></p>
                     </div>
                 </div>
                 <div class="toggle-fieldtype-wrapper grp-mt-2" v-if="config.show_toggle">
