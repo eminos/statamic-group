@@ -8,7 +8,8 @@
 }
 
 .group-fieldtype > .field-inner,
-.group-fieldtype > label {
+.group-fieldtype > label,
+.group-fieldtype > label:first-child + .help-block {
     display: none !important;
 }
 
