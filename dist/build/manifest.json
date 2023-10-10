@@ -1,11 +1,11 @@
 {
   "resources/css/statamic-group.css": {
-    "file": "assets/statamic-group-29b7d030.css",
+    "file": "assets/statamic-group-7ed307c9.css",
     "isEntry": true,
     "src": "resources/css/statamic-group.css"
   },
   "resources/js/statamic-group.js": {
-    "file": "assets/statamic-group-7565f277.js",
+    "file": "assets/statamic-group-68f349f8.js",
     "isEntry": true,
     "src": "resources/js/statamic-group.js"
   }
