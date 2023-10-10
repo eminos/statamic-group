@@ -2,9 +2,7 @@
 @import "tailwindcss/utilities";
 
 .group-fieldtype {
-    padding: 0 !important;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
+    @apply grp-relative -grp-mt-px grp-border-t !grp-p-0;
 }
 
 .group-fieldtype > .field-inner,
@@ -14,7 +12,9 @@
 }
 
 .group-fieldtype .section-fieldtype.form-group:first-child {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-top-width: 1px;
+    @apply grp-relative grp-mt-0 grp-rounded-t-md grp-border-t-0;
+}
+
+.group-fieldtype:last-child .section-fieldtype.form-group:not(.active) {
+    @apply grp-rounded-b-md;
 }

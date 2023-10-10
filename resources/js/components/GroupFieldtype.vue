@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="form-group section-fieldtype w-full" v-if="config.show_header">
+        <div class="form-group section-fieldtype w-full" :class="{'active': toggle}" v-if="config.show_header">
             <div class="flex grp-justify-between grp-items-center">
                 <div class="field-inner">
                     <label class="publish-field-label">
