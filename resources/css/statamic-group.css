@@ -18,3 +18,7 @@
 .group-fieldtype:last-child .section-fieldtype.form-group:not(.active) {
     @apply grp-rounded-b-md;
 }
+
+.card .publish-fields:first-child .group-fieldtype {
+    @apply grp-rounded-t-md;
+}
