@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="form-group section-fieldtype w-full" :class="{'active': toggle}" v-if="config.show_header">
+        <div class="form-group section-fieldtype w-full" :class="{'active': showFields}" v-if="config.show_header">
             <div class="flex grp-justify-between grp-items-center">
                 <div class="field-inner">
                     <label class="publish-field-label">
@@ -13,7 +13,7 @@
                 </div>
             </div>
         </div>
-        <div class="publish-fields w-full" v-show="!config.toggle_controls_visibility || (config.toggle_controls_visibility && toggle)"></div>
+        <div class="publish-fields w-full" v-show="showFields"></div>
     </div>
 </template>
 
@@ -33,6 +33,12 @@ export default {
             if (this.config.save_toggle_state) {
                 this.update(this.toggle)
             }
+        }
+    },
+
+    computed: {
+        showFields(){
+            return ! this.config.toggle_controls_visibility || (this.config.toggle_controls_visibility && this.toggle);
         }
     },
 
