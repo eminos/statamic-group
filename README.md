@@ -1,10 +1,15 @@
-# Statamic Group
+# Statamic Inline Group
 
-A Statamic plugin that adds a Group Fieldtype.<br>
+**As of Statamic v4.37.0 we now have a native [Group Fieldtype](https://statamic.dev/fieldtypes/group).**
+Since the two fieldtypes differ both visually and functionally let's keep this addon around but rename it to **Inline Group** to not conflict with the native Group Fieldtype.
+
+---
+
+A Statamic plugin that adds an Inline Group Fieldtype.<br>
 You can group other fields without affecting their scope and you can control those groups' visibility with regular Statamic field conditions.
 You can also optionally show a header and a toggle.
 
-![Screenshot of the Group Fieldtype](docs/screenshot1.png)
+![Screenshot of the Inline Group Fieldtype](docs/screenshot1.png)
 
 ## Installation
 
@@ -16,7 +21,7 @@ composer require eminos/statamic-group
 
 ## Features
 
-- Group fieldtype that starts a new group wherever you put it in the blueprint or fieldset.
+- Inline Group fieldtype that starts a new group wherever you put it in the blueprint or fieldset.
 - By default the group is not doing anything, but you can control its visibility with other fields and conditions.
 - You can choose to show a header (same design as the build-in Section fieldtype).
 - You can choose to show a toggle.
@@ -25,7 +30,7 @@ composer require eminos/statamic-group
 
 ### Here's a screenshot of the config options.
 
-![Screenshot of the Group field config](docs/screenshot2.png)
+![Screenshot of the Inline Group field config](docs/screenshot2.png)
 
 
 ## License

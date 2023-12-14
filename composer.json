@@ -1,7 +1,7 @@
 {
     "name": "eminos/statamic-group",
     "type": "statamic-addon",
-    "description": "A Statamic addon that adds a Group fieldtype that allows you to group multiple fields.",
+    "description": "A Statamic addon that adds an Inline Group fieldtype that allows you to group multiple fields.",
     "license": "MIT",
     "require": {
         "statamic/cms": "^3.0||^4.0"
@@ -13,17 +13,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Eminos\\StatamicGroup\\": "src"
+            "Eminos\\StatamicInlineGroup\\": "src"
         }
     },
     "extra": {
         "statamic": {
-            "name": "Statamic Group",
-            "description": "A Statamic addon that adds a Group fieldtype that allows you to group multiple fields."
+            "name": "Statamic Inline Group",
+            "description": "A Statamic addon that adds an Inline Group fieldtype that allows you to group multiple fields."
         },
         "laravel": {
             "providers": [
-                "Eminos\\StatamicGroup\\ServiceProvider"
+                "Eminos\\StatamicInlineGroup\\ServiceProvider"
             ]
         }
     },

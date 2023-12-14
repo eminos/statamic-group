@@ -1,0 +1,24 @@
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.inline-group-fieldtype {
+    @apply grp-relative -grp-mt-px grp-border-t !grp-p-0;
+}
+
+.inline-group-fieldtype > .field-inner,
+.inline-group-fieldtype > label,
+.inline-group-fieldtype > label:first-child + .help-block {
+    display: none !important;
+}
+
+.inline-group-fieldtype .section-fieldtype.form-group:first-child {
+    @apply grp-relative grp-mt-0 grp-rounded-t-md grp-border-t-0;
+}
+
+.inline-group-fieldtype:last-child .section-fieldtype.form-group:not(.active) {
+    @apply grp-rounded-b-md;
+}
+
+.card .publish-fields:first-child .inline-group-fieldtype {
+    @apply grp-rounded-t-md;
+}

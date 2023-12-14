@@ -52,7 +52,7 @@ export default {
         let nextSiblings = [];
 
         while (element.nextElementSibling) {
-            if (element.nextElementSibling.classList.contains('group-fieldtype')) {
+            if (element.nextElementSibling.classList.contains('inline_group-fieldtype')) {
                 break
             }
 

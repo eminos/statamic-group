@@ -1,36 +1,22 @@
 <?php
 
-namespace Eminos\StatamicGroup;
+namespace Eminos\StatamicInlineGroup;
 
 use Statamic\Providers\AddonServiceProvider;
-use Eminos\StatamicGroup\Fieldtypes\GroupFieldtype;
+use Eminos\StatamicInlineGroup\Fieldtypes\InlineGroupFieldtype;
  
 class ServiceProvider extends AddonServiceProvider
 {
-    public function __construct()
-    {
-        $this->vite['hotFile'] = base_path('vendor/eminos/statamic-group/dist/vite.hot');
-
-        parent::__construct(app());
-    }
-
     protected $fieldtypes = [
-        GroupFieldtype::class,
+        InlineGroupFieldtype::class,
     ];
 
     protected $vite = [
-        'hotFile' => null, // set in the constructor for reasons
+        'hotFile' => __DIR__ . '/../dist/vite.hot',
         'publicDirectory' => 'dist',
         'input' => [
-            'resources/js/statamic-group.js',
-            'resources/css/statamic-group.css'
+            'resources/js/statamic-inline-group.js',
+            'resources/css/statamic-inline-group.css'
         ],
     ];
-
-    public function bootAddon()
-    {
-
-        // 
-        
-    }
 }

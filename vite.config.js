@@ -6,8 +6,8 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/js/statamic-group.js',
-                'resources/css/statamic-group.css',
+                'resources/js/statamic-inline-group.js',
+                'resources/css/statamic-inline-group.css',
             ],
             hotFile: 'dist/vite.hot',
             publicDirectory: 'dist',
